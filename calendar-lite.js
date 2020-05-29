@@ -558,7 +558,7 @@ class CalendarLite extends GestureEventListeners(PolymerElement) {
             // don't dispatch the date changed event if the element is just initialising
             return;
         }
-        this.dispatchEvent(new CustomEvent('date-change', {detail: {date: newDate}}));
+        this.dispatchEvent(new CustomEvent('date-change', {detail: {newDate: newDate, oldDate: oldDate}}));
     }
 
     dateFormat(date) {
