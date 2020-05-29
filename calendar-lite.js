@@ -282,12 +282,12 @@ class CalendarLite extends GestureEventListeners(PolymerElement) {
               <div class='container page' id="calendarContent">
               <div  id="mainContent">
                 <div class="container flex-horizontal dayNames">
-                <div>S</div>
                 <div>M</div>
                 <div>T</div>
                 <div>W</div>
                 <div>T</div>
                 <div>F</div>
+                <div>S</div>
                 <div>S</div>
                 </div>
                 <div id="dateContainer">
@@ -430,7 +430,7 @@ class CalendarLite extends GestureEventListeners(PolymerElement) {
         var tmpArray = [];
         this.cf = 0;
         //fill with empty cells
-        for (var i = 0; i < this.tmpDate.getDay(); i++) {
+        for (var i = 0; i < this.tmpDate.getDay() - 1; i++) {
             tmpArray.push({text: "", isDisabled: false, i: this.cf++});
         }
 
