@@ -1,7 +1,6 @@
-Polymer 3 version for https://github.com/Manohar-Gunturu/calendar-lite
 # \<calendar-lite\>
 
-Multi select date picker or calendar `npm install git+https://github.com/daniel-tabarcea/calendar-lite`
+Multi select date picker or calendar `npm install git+https://github.com/krasnyt/calendar-lite`
 
 Calendar-lite is a Webcomponent build with Polymer. It gives a nice interface to play with it.
 
