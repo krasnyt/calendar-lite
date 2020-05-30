@@ -589,6 +589,10 @@ class CalendarLite extends GestureEventListeners(PolymerElement) {
         this.currentMonth = tmp.getMonth();
         this.currentYear = tmp.getFullYear();
         this.dispatchEvent(new CustomEvent('month-change', {detail: {date: this.tmpDate}}));
+        this.refresh();
+    }
+
+    refresh() {
         this.generateTable();
         this.separator = [0, 1, 2, 3, 4, 5];
     }
