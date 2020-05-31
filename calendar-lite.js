@@ -554,10 +554,11 @@ class CalendarLite extends GestureEventListeners(PolymerElement) {
         this.currentMonth = newDate.getMonth();
         this.currentYear = newDate.getFullYear();
 
-        if (!oldDate) {
+        // tokr: dispatch the event even on load
+        // if (!oldDate) {
             // don't dispatch the date changed event if the element is just initialising
-            return;
-        }
+            // return;
+        // }
         this.dispatchEvent(new CustomEvent('date-change', {detail: {newDate: newDate, oldDate: oldDate}}));
     }
 
